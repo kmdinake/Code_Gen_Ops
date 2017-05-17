@@ -1,0 +1,228 @@
+0	keyword	input
+1	grouping symbol	(
+2	user-defined name	n
+3	grouping symbol	)
+4	grouping symbol	;
+5	user-defined name	one
+6	assignment operator	=
+7	integer	1
+8	grouping symbol	;
+9	user-defined name	zero
+10	assignment operator	=
+11	integer	0
+12	grouping symbol	;
+13	keyword	if
+14	grouping symbol	(
+15	grouping symbol	(
+16	user-defined name	n
+17	comparison symbol	<
+18	user-defined name	zero
+19	grouping symbol	)
+20	grouping symbol	)
+21	keyword	then
+22	grouping symbol	{
+23	user-defined name	out
+24	assignment operator	=
+25	short string	"illegal"
+26	grouping symbol	;
+27	keyword	output
+28	grouping symbol	(
+29	user-defined name	out
+30	grouping symbol	)
+31	grouping symbol	;
+32	keyword	halt
+33	grouping symbol	}
+34	grouping symbol	;
+35	user-defined name	counter
+36	assignment operator	=
+37	integer	0
+38	grouping symbol	;
+39	keyword	while
+40	grouping symbol	(
+41	grouping symbol	(
+42	user-defined name	n
+43	comparison symbol	>
+44	user-defined name	zero
+45	grouping symbol	)
+46	grouping symbol	)
+47	grouping symbol	{
+48	user-defined name	bool
+49	assignment operator	=
+50	integer	0
+51	grouping symbol	;
+52	user-defined name	eventest
+53	grouping symbol	;
+54	keyword	if
+55	grouping symbol	(
+56	keyword	eq
+57	grouping symbol	(
+58	user-defined name	bool
+59	grouping symbol	,
+60	user-defined name	one
+61	grouping symbol	)
+62	grouping symbol	)
+63	keyword	then
+64	grouping symbol	{
+65	user-defined name	down
+66	grouping symbol	}
+67	keyword	else
+68	grouping symbol	{
+69	user-defined name	up
+70	grouping symbol	}
+71	grouping symbol	;
+72	user-defined name	counter
+73	assignment operator	=
+74	keyword	add
+75	grouping symbol	(
+76	user-defined name	counter
+77	grouping symbol	,
+78	user-defined name	one
+79	grouping symbol	)
+80	grouping symbol	}
+81	grouping symbol	;
+82	keyword	output
+83	grouping symbol	(
+84	user-defined name	counter
+85	grouping symbol	)
+86	grouping symbol	;
+87	keyword	halt
+88	grouping symbol	;
+89	keyword	proc
+90	user-defined name	up
+91	grouping symbol	{
+92	user-defined name	three
+93	assignment operator	=
+94	integer	3
+95	grouping symbol	;
+96	user-defined name	n
+97	assignment operator	=
+98	keyword	mult
+99	grouping symbol	(
+100	user-defined name	n
+101	grouping symbol	,
+102	user-defined name	three
+103	grouping symbol	)
+104	grouping symbol	;
+105	user-defined name	n
+106	assignment operator	=
+107	keyword	add
+108	grouping symbol	(
+109	user-defined name	n
+110	grouping symbol	,
+111	user-defined name	one
+112	grouping symbol	)
+113	grouping symbol	}
+114	keyword	proc
+115	user-defined name	down
+116	grouping symbol	{
+117	user-defined name	half
+118	assignment operator	=
+119	integer	0
+120	grouping symbol	;
+121	user-defined name	aux
+122	assignment operator	=
+123	user-defined name	n
+124	grouping symbol	;
+125	user-defined name	two
+126	assignment operator	=
+127	integer	2
+128	grouping symbol	;
+129	keyword	while
+130	grouping symbol	(
+131	grouping symbol	(
+132	user-defined name	half
+133	comparison symbol	<
+134	user-defined name	aux
+135	grouping symbol	)
+136	grouping symbol	)
+137	grouping symbol	{
+138	user-defined name	brandnew
+139	assignment operator	=
+140	keyword	mult
+141	grouping symbol	(
+142	user-defined name	half
+143	grouping symbol	,
+144	user-defined name	two
+145	grouping symbol	)
+146	grouping symbol	;
+147	keyword	if
+148	grouping symbol	(
+149	keyword	eq
+150	grouping symbol	(
+151	user-defined name	aux
+152	grouping symbol	,
+153	user-defined name	brandnew
+154	grouping symbol	)
+155	grouping symbol	)
+156	keyword	then
+157	grouping symbol	{
+158	user-defined name	aux
+159	assignment operator	=
+160	user-defined name	half
+161	grouping symbol	}
+162	grouping symbol	;
+163	user-defined name	half
+164	assignment operator	=
+165	keyword	add
+166	grouping symbol	(
+167	user-defined name	half
+168	grouping symbol	,
+169	user-defined name	one
+170	grouping symbol	)
+171	grouping symbol	}
+172	grouping symbol	;
+173	user-defined name	n
+174	assignment operator	=
+175	user-defined name	aux
+176	grouping symbol	}
+177	keyword	proc
+178	user-defined name	eventest
+179	grouping symbol	{
+180	user-defined name	zero
+181	assignment operator	=
+182	integer	0
+183	grouping symbol	;
+184	user-defined name	test
+185	assignment operator	=
+186	user-defined name	n
+187	grouping symbol	;
+188	keyword	while
+189	grouping symbol	(
+190	keyword	not
+191	grouping symbol	(
+192	user-defined name	test
+193	comparison symbol	<
+194	user-defined name	zero
+195	grouping symbol	)
+196	grouping symbol	)
+197	grouping symbol	{
+198	keyword	if
+199	grouping symbol	(
+200	keyword	eq
+201	grouping symbol	(
+202	user-defined name	n
+203	grouping symbol	,
+204	user-defined name	zero
+205	grouping symbol	)
+206	grouping symbol	)
+207	keyword	then
+208	grouping symbol	{
+209	user-defined name	bool
+210	assignment operator	=
+211	integer	1
+212	grouping symbol	}
+213	grouping symbol	;
+214	user-defined name	two
+215	assignment operator	=
+216	integer	2
+217	grouping symbol	;
+218	user-defined name	test
+219	assignment operator	=
+220	keyword	sub
+221	grouping symbol	(
+222	user-defined name	test
+223	grouping symbol	,
+224	user-defined name	two
+225	grouping symbol	)
+226	grouping symbol	}
+227	grouping symbol	}
