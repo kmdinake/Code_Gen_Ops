@@ -1,0 +1,25 @@
+one  = 1;
+null = 0;
+
+always = one;
+exists = null;
+amount = null;
+passwd = null;
+
+show   = "show";
+error  = "error";
+create = "create";
+close  = "close";
+depos  = "pay in";
+withdr = "take out";
+
+while ( eq(always,always) ) 
+      {
+       input(instruction);
+       if ( eq(instrucion,create)) then { setpw; create };
+       if ( eq(instrucion,close) ) then { askpw; close };
+       if ( eq(instrucion,show)  ) then { askpw; show };
+       if ( eq(instrucion,depos) ) then { askpw; in  };
+       if ( eq(instrucion,withdr)) then { askpw; out} else { output(error) } ;
+      };
+
